@@ -1,0 +1,41 @@
+mail:
+  server:
+    mailtrap:
+      host: "sandbox.smtp.mailtrap.io"
+      port: 2525
+      username: 2d840b7354530d
+      password: 8b7697c952f488
+      smtp:
+        auth: true
+        starttls:
+          enable: true
+        quitwait: false
+        ssl:
+          protocols: TLSv1.22
+    gmail:
+      host: smtp.gmail.com
+      port: 587
+      username: test@gmail.com
+      password: 1234567
+      smtp:
+        auth: true
+        starttls:
+          enable: true
+    outlook:
+      host: smtp.office365.com
+      port: 587
+      username: test@gmail.com
+      password: 1234567
+      smtp:
+        auth: true
+        starttls:
+          enable: true
+    sendgrid:
+      host: smtp.sendgrid.net
+      port: 587
+      username: test@gmail.com
+      password: 1234567
+      smtp:
+        auth: true
+        starttls:
+          enable: true

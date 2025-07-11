@@ -1,0 +1,48 @@
+spring:
+  application:
+    name: springboot-sending-mail
+    spring:
+  main:
+    banner-mode: "off"
+  mail:
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+          auth: true
+    host: smtp.office365.com
+    username: noreply@dtsvn.com
+    password: 53qmTxB47Z
+    port: 587
+
+# Mail Config
+mail:
+  from: noreply@dtsvn.com
+  server:
+    # Outlook
+    host: smtp.office365.com
+    port: 587
+    protocol: smtp
+    username: noreply@dtsvn.com
+    password: 53qmTxB47Z
+  smtp:
+    auth: true
+    starttls:
+      enable: true
+    quitwait: false
+    ssl:
+      protocols: TLSv1.2
+  template:
+    content-type: text/html
+    charset: UTF-8
+
+# Swagger (Rest API Document)
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    operations-sorter: method
+    enabled: 'true'
+    path: /swagger-ui.html
+  operations-sorter: method
